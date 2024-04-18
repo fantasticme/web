@@ -148,22 +148,8 @@ chmod 755 $projects_dir"_uwsgi.ini"  build.sh
 
 #echo -e  "\e[35m configuration nginx.conf \e[0m"
 
-#sed -i "s/# SSL Settings/# SSL Settings
-#	upstream flask {
-#		server 192.168.0.48:8008
-#	}
-#	server {
-#		listen 80;
-#		listen [::]:80;
-#		server_name _;
-#		root $current_dir\/$code_name;
-#		include \/etc\/nginx\/default.d\/\*.conf;
-#		location \/{
-#		uwsgi_pass flask;
-#		include uwsgi_params;
-#		}
-#	}/"  $script_path/nginx.conf
-#cat $script_path/nginx.conf
+@sed -i -e "s/root \/home\/workspace\/web\/app\/code\/;/root $script_path\/nginx.conf;/"
+
 echo -e "\e[35m hlep conmmand start---------------------------------- \e[0m"
 echo -e "\e[35m source $projects_dir/$envs_dir/bin/activate \e[0m"
 echo -e "\e[35m deactivate \e[0m"
