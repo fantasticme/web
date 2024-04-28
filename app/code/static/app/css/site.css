@@ -1,0 +1,10 @@
+.container {
+    background-size: cover; /* 背景图片覆盖整个容器 */
+    background-position: center; /* 背景图片居中显示 */
+    background-repeat: no-repeat; /* 背景图片不重复 */
+    width: 100%; /* 容器宽度 */
+    height: 500px; /* 容器高度，可以根据需要设置 */
+  }
+  
+
+  

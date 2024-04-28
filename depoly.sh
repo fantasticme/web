@@ -122,6 +122,7 @@ cat $script_path/app.py > $code_name/app.py
 deactivate
 echo -e  "\e[35m configuration $projects_name"_uwsgi.ini" \e[0m"
 echo "[uwsgi]
+#socket = `ifconfig eth0 | grep -E 'inet ' | awk '{print $2}'`":8008"
 socket = 192.168.0.48:8008
 chdir = $current_dir/$code_name/
 wsgi-file = $current_dir/$code_name/app.py

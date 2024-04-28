@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>首页</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="static/bootstrap530/css/bootstrap.min.css" rel="stylesheet">
+  <script src="static/bootstrap530/js/bootstrap.bundle.min.js"></script>
+  <script src="static/jquery-3.7.1.min.js"></script>
+  <link rel="stylesheet" href="static/icons-1.11.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="static/app/css/site.css">
+  <link rel="shortcut icon" href="static/img/b-j.jpg" type="image/x-icon">  
+</head>
+<body>
+<nav class="navbar navbar-expand-sm bg-light navbar-light">
+	<!-- Nav tabs -->
+  <ul class="nav nav-pills text-decoration-none" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active"  href="/home"><i class="bi bi-rocket-takeoff-fill"></i>首页</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active"   href="/music"><i class="bi bi-music-note"></i>音乐</a>
+    </li>
+    <li class="nav-item">
+	    <a class="nav-link active"  href="/video"><i class="bi bi-film"></i>视频</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active"  href="/weather"><i class="bi bi-cloud-sun"></i>天气</a>
+    </li>
+     <li class="nav-item">
+      <a class="nav-link active" href="calendar"><i class="bi bi-calendar3"></i>日历</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active"  href="/about"><i class="bi bi-whatsapp"></i>关于我们</a>
+    </li>
+  </ul>
+</nav>
+  {% block content %}{% endblock %}
+  
+</body>
+</html>

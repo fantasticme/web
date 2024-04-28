@@ -1,0 +1,9 @@
+2024年04月21日修改记录
+//python web 开发环境部署脚步
+//增加脚本使用说明
+git 仓库地址：git@github.com:kissslzf/web.git
+拉取远程代码：git clone git@github.com:kissslzf/web.git
+depoly.sh 部署web环境的脚本工具
+index.html 网页文件，供环境部署后，首次运行时使用。depoly.sh生成开发环境后会被复制到环境中app/code/templates/目录下
+app.py web网站首次运行时的起始地方，depoly.sh生成开发环境后会被复制到环境中app/code目录下
+当环境部署好后,需要将nginx.conf 中的server 12.168.0.48:8008的ip地址修改为app/build.sh中#socket 中的ip地址,然后将nginx.conf复制到/etc/nginx/目录中。
